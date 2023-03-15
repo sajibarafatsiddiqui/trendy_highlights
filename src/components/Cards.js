@@ -4,7 +4,7 @@ import CurrencyCard from 'components/CurrencyCard';
 import { Row, Col } from 'react-bootstrap';
 
 const Cards = ({ rate }) => (
-  <Row xs={2} md={2} className="g-4">
+  <Row xs={2} md={2} className="g-0">
 
     { Object.keys(rate).length > 1
      && Object.keys(rate).map(

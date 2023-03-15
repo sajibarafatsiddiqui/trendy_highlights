@@ -1,0 +1,6 @@
+.EUR {
+   background: url('assets/EUR.svg') no-repeat, #EC4C8A;
+   background-size:contain;
+   text-align: right;
+   background-position: center;
+}
