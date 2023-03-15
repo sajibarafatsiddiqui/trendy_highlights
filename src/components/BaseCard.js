@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { PropTypes } from 'prop-types';
 
-const BaseCard = ({ baseCurrency }) => {
-  return (
-    <div>{ baseCurrency }</div>
-  )
-}
+const BaseCard = ({ baseCurrency }) => (
+  <div>{ baseCurrency }</div>
+);
 
-export default BaseCard
+BaseCard.propTypes = { baseCurrency: PropTypes.string.isRequired };
+
+export default BaseCard;
