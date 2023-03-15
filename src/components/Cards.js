@@ -1,27 +1,22 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import CurrencyCard from 'components/CurrencyCard';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Row, Col } from 'react-bootstrap';
 
-const Cards = ({ rate }) => {
-  console.log(rate);
-  return (
-    <Container className="p-2">
-      <Row className="g-4">
-        <Col>
-          { Object.keys(rate).length > 1
+const Cards = ({ rate }) => (
+  <Row xs={2} md={2} className="g-4">
+
+    { Object.keys(rate).length > 1
      && Object.keys(rate).map(
        (currency) => (
-         <CurrencyCard key={currency} currency={currency} rate={rate[currency]} />
+         <Col key={currency}>
+           <CurrencyCard currency={currency} rate={rate[currency]} />
+         </Col>
        ),
      )}
-        </Col>
-      </Row>
-    </Container>
-  );
-};
+
+  </Row>
+);
 Cards.propTypes = { rate: PropTypes.objectOf(PropTypes.number).isRequired };
 
 export default Cards;
