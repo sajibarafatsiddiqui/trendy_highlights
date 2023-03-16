@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom';
 import BaseCurrencyContext from 'context/BaseCurrencyContext';
 
 const CurrencyCard = ({ currency, rate }) => {
-  const baseCurrency = useContext(BaseCurrencyContext);
+  const { baseCurrency } = useContext(BaseCurrencyContext);
   return (
     <Card className={style[currency]}>
       <Card.Body>
-        <NavLink to={`/details/${baseCurrency}-${currency}`}>
+        <NavLink to={`/details/${baseCurrency}-${currency}`} state={rate}>
           <Card.Title>{ currency }</Card.Title>
           <Card.Text>
             { rate }

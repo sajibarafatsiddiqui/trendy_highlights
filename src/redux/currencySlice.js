@@ -18,11 +18,28 @@ export const fetchAllCurrencyAgainstBase = createAsyncThunk(
   },
 );
 
+export const fetchHistoricalCurrencyAgainstBase = createAsyncThunk(
+  'currency/fetchHistoricalCurrencyAgainstBase',
+  async (data, thunkAPI) => {
+    const { baseCurrency, currency, startDate } = data;
+    console.log(data);
+    try {
+      const response = await axios.get(`${baseUrl}historical/?api_key=${apiKey}&base=${baseCurrency}&date=${startDate}&symbols=${currency}`);
+      if (response.data === '') return {};
+      console.log(response.data);
+      return response.data.response.rates[currency];
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  },
+);
+
 const initialState = {
   rates: {},
   ifSucceed: false,
   isLoading: false,
   isError: false,
+  historyRate: '',
 };
 
 const currencySlice = createSlice({
@@ -36,6 +53,14 @@ const currencySlice = createSlice({
       })
       .addCase(fetchAllCurrencyAgainstBase.fulfilled, (state, action) => {
         state.rates = action.payload;
+        state.ifSucceed = true;
+        state.isLoading = false;
+      })
+      .addCase(fetchHistoricalCurrencyAgainstBase.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(fetchHistoricalCurrencyAgainstBase.fulfilled, (state, action) => {
+        state.historyRate = action.payload;
         state.ifSucceed = true;
         state.isLoading = false;
       });
