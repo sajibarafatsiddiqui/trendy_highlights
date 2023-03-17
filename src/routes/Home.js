@@ -16,7 +16,6 @@ const Home = () => {
   const filteredRates = pick(rates,
     'AED', 'AUD', 'BDT', 'CAD', 'CHF', 'CNY', 'EUR',
     'GBP', 'INR', 'JPY', 'KWD', 'NZD', 'RMB');
-  console.log(filteredRates);
   useEffect(() => {
     dispatch(fetchAllCurrencyAgainstBase(baseCurrency));
   }, [dispatch, baseCurrency]);

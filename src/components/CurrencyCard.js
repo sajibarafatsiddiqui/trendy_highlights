@@ -9,7 +9,6 @@ import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 
 const CurrencyCard = ({ currency, rate, isDark }) => {
   const { baseCurrency } = useContext(BaseCurrencyContext);
-  console.log(isDark);
   return (
     <Card style={{ backgroundColor: isDark ? '#CF4277' : '#e94987', padding: '0' }} className={cx(style[currency], style.Card)}>
       <Card.Body style={{ margin: '0' }}>

@@ -7,33 +7,32 @@ import BaseCurrencyContext from 'context/BaseCurrencyContext';
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from 'redux/store';
 
-
 jest.mock('axios');
 axios.get.mockResolvedValue({
-    data: {
+  data: {
     response: {
-        base: "USD",
-        date: "2023-03-17T11:55:16Z",
-        rates:{
+      base: 'USD',
+      date: '2023-03-17T11:55:16Z',
+      rates: {
         ADA: 2.91801541,
         AED: 3.6725,
         EUR: 87.69844742,
         ALL: 107.8995027,
-        }
-        },
-}
+      },
+    },
+  },
 });
 
-const baseCurrency ='USD'
+const baseCurrency = 'USD';
 
 const wrap = (component) => (
-    <Provider store={store}>
-      <BaseCurrencyContext.Provider value={{ baseCurrency }}>
+  <Provider store={store}>
+    <BaseCurrencyContext.Provider value={{ baseCurrency }}>
       <Router>
-      {component}
+        {component}
       </Router>
-      </BaseCurrencyContext.Provider>
-    </Provider>
+    </BaseCurrencyContext.Provider>
+  </Provider>
 );
 
 describe('Tests for <Home /> component', () => {

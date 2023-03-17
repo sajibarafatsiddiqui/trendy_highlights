@@ -7,7 +7,6 @@ let isDark = false;
 
 const Cards = ({ rate }) => {
   const dark = (idx) => {
-    console.log(isDark);
     if (idx % 2 !== 0) {
       isDark = !isDark;
       window.isDark = isDark;

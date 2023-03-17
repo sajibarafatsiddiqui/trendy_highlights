@@ -20,7 +20,6 @@ const Details = () => {
   const today = date.toISOString().split('T')[0];
   date.setDate(date.getDate() - 30);
   const startDate = date.toISOString().split('T')[0];
-  console.log(startDate);
   const data = { baseCurrency, currency, startDate };
   const location = useLocation();
   const liveRate = location.state;
