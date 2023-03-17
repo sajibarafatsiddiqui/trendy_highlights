@@ -183,7 +183,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank all my morning session teammates who gave me suggestions regarding this project. 
+Original design idea by <a href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa on Behance</a>. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
