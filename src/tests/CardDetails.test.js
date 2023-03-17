@@ -12,7 +12,7 @@ describe('Tests for <CardDetails /> component', () => {
       startDate="2023-02-01"
       historyRate={100.23}
       today="2023-03-17"
-      liveRate="100.50"
+      liveRate={100.50}
     />
   );
   const baseCurrency = 'USD';
