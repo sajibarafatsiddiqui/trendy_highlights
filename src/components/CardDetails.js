@@ -46,9 +46,9 @@ const CardDetails = ({
 
 CardDetails.propTypes = {
   startDate: PropTypes.string.isRequired,
-  historyRate: PropTypes.string.isRequired,
+  historyRate: PropTypes.number.isRequired,
   today: PropTypes.string.isRequired,
-  liveRate: PropTypes.string.isRequired,
+  liveRate: PropTypes.number.isRequired,
 };
 
 export default CardDetails;

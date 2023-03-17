@@ -24,7 +24,7 @@ const CurrencyCard = ({ currency, rate, isDark }) => {
             bottom: '0', right: '0', position: 'absolute',
           }}
           >
-            { rate.toFixed(4) }
+            { Number(rate).toFixed(4) }
           </Card.Footer>
 
         </NavLink>

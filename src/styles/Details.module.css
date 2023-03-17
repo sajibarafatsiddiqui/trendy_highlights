@@ -1,19 +1,20 @@
 
-.details_currency> div:nth-child(odd) {
-    background-color: #ea4a89 !important;
+.details_currency > div:nth-child(odd) {
+  background-color: #ea4a89 !important;
 }
 
-.details_currency>div:nth-child(even) {
-    background-color: #cf4278 !important;
+.details_currency > div:nth-child(even) {
+  background-color: #cf4278 !important;
 }
 
 .dark {
-    line-height: 1.5;
-    background-color: #cf4278;
+  line-height: 1.5;
+  background-color: #cf4278;
 }
 
 .dark_header {
-    line-height: 1.5;
-    font-weight: 100;
-    background-color: #cf4278;
+  line-height: 1.5;
+  font-weight: 100 !important;
+  text-align: center;
+  background-color: #cf4278;
 }

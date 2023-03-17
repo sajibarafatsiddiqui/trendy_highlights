@@ -16,13 +16,13 @@ const Home = () => {
   const filteredRates = pick(rates,
     'AED', 'AUD', 'BDT', 'CAD', 'CHF', 'CNY', 'EUR',
     'GBP', 'INR', 'JPY', 'KWD', 'NZD', 'RMB');
-
+  console.log(filteredRates);
   useEffect(() => {
     dispatch(fetchAllCurrencyAgainstBase(baseCurrency));
   }, [dispatch, baseCurrency]);
   return (
     <>
-      <h1 className={style.dark_header}>Exchange Rate</h1>
+      <p className={style.dark_header}>Exchange Rate</p>
       <Row xs={1} md={1} className="g-0">
         <BaseCard baseCurrency={baseCurrency} />
       </Row>

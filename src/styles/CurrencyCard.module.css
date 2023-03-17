@@ -1,92 +1,94 @@
 .AED {
-   background: url('assets/AED.svg') no-repeat, #EC4C8A;
+  background: url('assets/AED.svg') no-repeat, #ec4c8a;
 }
 
 .AUD {
-   background: url('assets/AUD.svg') no-repeat, #EC4C8A;
+  background: url('assets/AUD.svg') no-repeat, #ec4c8a;
 }
 
 .BDT {
-   background: url('assets/BDT.svg') no-repeat, #EC4C8A;
+  background: url('assets/BDT.svg') no-repeat, #ec4c8a;
 }
 
 .CAD {
-   background: url('assets/CAD.svg') no-repeat, #EC4C8A;
+  background: url('assets/CAD.svg') no-repeat, #ec4c8a;
 }
 
 .CHF {
-   background: url('assets/CHF.svg') no-repeat, #EC4C8A;
+  background: url('assets/CHF.svg') no-repeat, #ec4c8a;
 }
 
 .CNY {
-   background: url('assets/CNY.svg') no-repeat, #EC4C8A;
+  background: url('assets/CNY.svg') no-repeat, #ec4c8a;
 }
 
 .EUR {
-   background: url('assets/EUR.svg') no-repeat, #EC4C8A;
+  background: url('assets/EUR.svg') no-repeat, #ec4c8a;
 }
 
 .GBP {
-   background: url('assets/GBP.svg') no-repeat, #EC4C8A;
+  background: url('assets/GBP.svg') no-repeat, #ec4c8a;
 }
 
 .INR {
-   background: url('assets/INR.svg') no-repeat, #EC4C8A;
+  background: url('assets/INR.svg') no-repeat, #ec4c8a;
 }
 
 .JPY {
-   background: url('assets/JPY.svg') no-repeat, #EC4C8A;
+  background: url('assets/JPY.svg') no-repeat, #ec4c8a;
 }
 
 .KWD {
-   background: url('assets/KWD.svg') no-repeat, #EC4C8A;
+  background: url('assets/KWD.svg') no-repeat, #ec4c8a;
 }
 
 .NZD {
-   background: url('assets/NZD.svg') no-repeat, #EC4C8A;
+  background: url('assets/NZD.svg') no-repeat, #ec4c8a;
 }
 
 .USD {
-   background: url('assets/USD.svg') no-repeat, #EC4C8A;
+  background: url('assets/USD.svg') no-repeat, #ec4c8a;
 }
 
 .Card {
-   background-color: #EC4C8A;
-   background-size:90% 90%;
-   text-align:end;
-   bottom:0;
-   position: relative;
-   background-position: 30% 20%;
-   border:none
+  background-color: #ec4c8a;
+  background-size: 90% 90%;
+  text-align: end;
+  bottom: 0;
+  position: relative;
+  background-position: 30% 20%;
+  border: none;
 }
 
 .BaseCard {
-   background-color: #EC4C8A;
-   background-size:50% 100%;
-   text-align:right;
-   padding-right:2rem;
-   background-position: 0% 20%;
-   border:none
+  background-color: #ec4c8a;
+  background-size: 50% 100%;
+  text-align: right;
+  padding-right: 2rem;
+  background-position: 0% 20%;
+  border: none;
 }
 
-.react-icons{
-   top:0;
-   right:0;
-   position:fixed;
+.react-icons {
+  top: 0;
+  right: 0;
+  position: fixed;
 }
+
 body {
-   background-color: #EC4C8A;
-   margin:0;
-   padding:0;
- }
+  background-color: #ec4c8a;
+  margin: 0;
+  padding: 0;
+}
 
- .dark {
-   line-height: 1.5;
-   background-color: #cf4278;
+.dark {
+  line-height: 1.5;
+  background-color: #cf4278;
 }
 
 .dark_header {
-   line-height: 1.5;
-   font-weight: 100;
-   background-color: #cf4278;
+  line-height: 2;
+  font-weight: lighter;
+  text-align: center;
+  background-color: #cf4278;
 }
