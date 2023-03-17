@@ -4,22 +4,29 @@ import { Card } from 'react-bootstrap';
 import style from 'styles/CurrencyCard.module.css';
 import { NavLink } from 'react-router-dom';
 import BaseCurrencyContext from 'context/BaseCurrencyContext';
+import cx from 'classnames';
+import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 
-const CurrencyCard = ({ currency, rate }) => {
+const CurrencyCard = ({ currency, rate, isDark }) => {
   const { baseCurrency } = useContext(BaseCurrencyContext);
+  console.log(isDark);
   return (
-    <Card className={style[currency]}>
-      <Card.Body>
-        <NavLink to={`/details/${baseCurrency}-${currency}`} state={rate}>
-          <Card.Title>{ currency }</Card.Title>
-          <Card.Text>
-            { rate }
-          </Card.Text>
-          <div className="currency__icon">
-            <span className="material-symbols-outlined">
-              arrow_right_alt
-            </span>
-          </div>
+    <Card style={{ backgroundColor: isDark ? '#CF4277' : '#e94987', padding: '0' }} className={cx(style[currency], style.Card)}>
+      <Card.Body style={{ margin: '0' }}>
+        <NavLink style={{ color: 'white', textDecoration: 'none' }} to={`/details/${baseCurrency}-${currency}`} state={rate}>
+          <IoArrowForwardCircleOutline style={{
+            top: '0', right: '0', position: 'absolute',
+          }}
+          />
+          <Card.Title />
+          <Card.Text>{ currency }</Card.Text>
+          <Card.Footer style={{
+            bottom: '0', right: '0', position: 'absolute',
+          }}
+          >
+            { rate.toFixed(4) }
+          </Card.Footer>
+
         </NavLink>
 
       </Card.Body>
@@ -30,5 +37,6 @@ const CurrencyCard = ({ currency, rate }) => {
 CurrencyCard.propTypes = {
   currency: PropTypes.string.isRequired,
   rate: PropTypes.number.isRequired,
+  isDark: PropTypes.bool.isRequired,
 };
 export default CurrencyCard;
