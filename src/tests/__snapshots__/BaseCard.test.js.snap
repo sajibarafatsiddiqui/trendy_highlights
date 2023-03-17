@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <BaseCard /> component Should match the snapshot 1`] = `
+<div
+  className="col"
+>
+  <div
+    className="USD BaseCard card"
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="card-title h5"
+      />
+      <p
+        className="card-text"
+      />
+      <div
+        className="card-footer"
+      >
+        <h1>
+          USD
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
