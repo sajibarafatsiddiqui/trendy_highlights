@@ -9,9 +9,10 @@
 <div align="center">
   <br/>
 
-<img width="362" alt="image" src="https://user-images.githubusercontent.com/39811497/221024024-72ce874f-3804-4dc9-afe6-94c4e1674ca8.png">
+<img width="283" alt="image" src="https://user-images.githubusercontent.com/39811497/225957475-9c8c6e79-da2b-4b5e-9637-9eb2c9c651d2.png">
 
-  <h3><b>Trendy Highlightd</b></h3>
+
+  <h3><b>Trendy Highlights</b></h3>
 
 </div>
 
