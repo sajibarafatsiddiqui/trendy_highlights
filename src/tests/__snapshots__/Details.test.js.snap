@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <Details /> component Should match the snapshot 1`] = `
+<section>
+  <div
+    className="dark_header row row-cols-md-2 row-cols-2"
+  >
+    <div
+      className="col-2 col"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1.5rem"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1.5rem"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"
+        />
+      </svg>
+    </div>
+    <h2
+      className="col-10 m-auto"
+    >
+      Base Currency:
+      USD
+    </h2>
+  </div>
+  <div
+    className="col"
+  >
+    <div
+      className="AED BaseCard card"
+    >
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        />
+        <p
+          className="card-text"
+        />
+        <div
+          className="card-footer"
+        >
+          <h1>
+            AED
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p
+    className="dark"
+  >
+    Stats of Currency
+  </p>
+  <div
+    className="details_currency row row-cols-md-1 row-cols-1"
+  >
+    <div
+      className="d-flex justify-content-between flex-1 col"
+    >
+      <p
+        className="text-start m-3"
+      >
+        History Date
+      </p>
+      <p
+        className="text-end m-3"
+      >
+        2023-02-19
+      </p>
+    </div>
+    <div
+      className="d-flex justify-content-between col"
+    >
+      <p
+        className="text-start m-3 card-text"
+      >
+        History Rate
+      </p>
+      <p
+        className="text-end m-3"
+      >
+        3.6725
+      </p>
+    </div>
+    <div
+      className="d-flex justify-content-between col"
+    >
+      <p
+        className="text-start m-3"
+      >
+        Current Date
+      </p>
+      <p
+        className="text-end m-3"
+      >
+        2023-03-21
+      </p>
+    </div>
+    <div
+      className="d-flex justify-content-between col"
+    >
+      <p
+        className="text-start m-3"
+      >
+        Latest Rate
+      </p>
+      <p
+        className="text-end m-3"
+      />
+    </div>
+    <div
+      className="d-flex justify-content-between col"
+    >
+      <p
+        className="text-start m-3"
+      >
+        Rate Changed
+      </p>
+      <p
+        className="text-end m-3"
+      >
+        -3.6725
+      </p>
+    </div>
+    <div
+      className="col"
+    >
+      <p
+        className="text-center text-danger"
+      >
+        Rate is decreaded by  
+        3.6725
+      </p>
+    </div>
+  </div>
+</section>
+`;

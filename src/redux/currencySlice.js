@@ -25,6 +25,7 @@ export const fetchHistoricalCurrencyAgainstBase = createAsyncThunk(
     try {
       const response = await axios.get(`${baseUrl}historical/?api_key=${apiKey}&base=${baseCurrency}&date=${startDate}&symbols=${currency}`);
       if (response.data === '') return {};
+      console.log(response.data);
       return response.data.response.rates[currency];
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
