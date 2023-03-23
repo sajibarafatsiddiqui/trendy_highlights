@@ -19,17 +19,17 @@ const Cards = ({ rate }) => {
   };
 
   return (
-    <Row xs={2} md={2} className="g-0">
+    <Row xs={2} md={2} className="g-0 p-2">
 
-      { Object.keys(rate).length > 1
-     && Object.keys(rate).map(
-       (currency, idx) => (
+      { Object.keys(rate).length > 0
+        ? Object.keys(rate).map(
+          (currency, idx) => (
 
-         <Col key={currency}>
-           <CurrencyCard currency={currency} rate={rate[currency]} isDark={dark(idx)} />
-         </Col>
-       ),
-     )}
+            <Col key={currency}>
+              <CurrencyCard currency={currency} rate={rate[currency]} isDark={dark(idx)} />
+            </Col>
+          ),
+        ) : <p>Search Result is 0</p>}
 
     </Row>
   );
