@@ -6,6 +6,7 @@ import BaseCurrencyContext from 'context/BaseCurrencyContext';
 import Row from 'react-bootstrap/Row';
 import { Card } from 'react-bootstrap';
 import { PropTypes } from 'prop-types';
+import searchStyle from 'styles/Search.module.css';
 import style from 'styles/CurrencyCard.module.css';
 
 function Search({ currencies }) {
@@ -33,16 +34,17 @@ function Search({ currencies }) {
   return (
     <>
       <div className={style.dark_header}>
-        <div className="d-flex justify-content-between align-self-center flex-1">
+        <div className="d-flex justify-content-between flex-1">
           <p className="m-2">Exchange Rate</p>
-          <div className="searchbar m-2">
+          <div className={`${searchStyle.searchbar} d-flex`}>
             <input
+              className={searchStyle.search_input}
               type="search"
               value={Currency}
               onChange={filter}
               placeholder="Search Currency"
             />
-            <FcSearch size="30  " />
+            <FcSearch className={searchStyle.search_icon} size="20" />
           </div>
         </div>
       </div>
