@@ -35,8 +35,8 @@ const CardDetails = ({
         </p>
       )
         : (
-          <p className="text-center text-danger">
-            Rate is decreaded by &nbsp;
+          <p className="text-center text-primary">
+            Rate is decreased by &nbsp;
             {(-1) * (liveRate - historyRate).toFixed(4)}
           </p>
         )}
