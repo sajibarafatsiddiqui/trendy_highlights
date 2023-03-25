@@ -7,7 +7,7 @@ import BaseCurrencyContext from 'context/BaseCurrencyContext';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { rates } = useSelector((state) => state.currency);
+  const { rates, isLoading } = useSelector((state) => state.currency);
   const { baseCurrency } = useContext(BaseCurrencyContext);
   const filteredRates = pick(rates,
     'AED', 'AUD', 'BDT', 'CAD', 'CHF', 'CNY', 'EUR',
@@ -17,7 +17,7 @@ const Home = () => {
   }, [dispatch, baseCurrency]);
   return (
     <>
-      <Search currencies={filteredRates} />
+      <Search currencies={filteredRates} loading={isLoading} />
 
     </>
   );

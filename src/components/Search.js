@@ -9,11 +9,14 @@ import { PropTypes } from 'prop-types';
 import searchStyle from 'styles/Search.module.css';
 import style from 'styles/CurrencyCard.module.css';
 
-function Search({ currencies }) {
-  const [Currency, setCurrency] = useState();
-  const [filterByCurrency, setFilterByCurrency] = useState(currencies);
+function Search({ currencies, loading }) {
+  const [search, setSearch] = useState(false);
+  const [Currency, setCurrency] = useState('');
+  const [filterByCurrency, setFilterByCurrency] = useState({});
   const { baseCurrency } = useContext(BaseCurrencyContext);
+
   const filter = (e) => {
+    setSearch(true);
     const keyword = e.target.value;
 
     if (keyword !== '') {
@@ -23,7 +26,9 @@ function Search({ currencies }) {
       ).reduce((obj, key) => Object.assign(obj, {
         [key]: currencies[key],
       }), {});
+      console.log(results);
       setFilterByCurrency(results);
+        <Cards rate={currencies} />;
     } else {
       setFilterByCurrency(currencies);
       // If the text field is empty, show all users
@@ -34,9 +39,9 @@ function Search({ currencies }) {
   return (
     <>
       <div className={style.dark_header}>
-        <div className="d-flex justify-content-between flex-1">
+        <div className="d-flex justify-content-between">
           <p className="m-2">Exchange Rate</p>
-          <div className={`${searchStyle.searchbar} d-flex`}>
+          <div className={`${searchStyle.searchbar} d-flex align-self-center m-2`}>
             <input
               className={searchStyle.search_input}
               type="search"
@@ -54,9 +59,14 @@ function Search({ currencies }) {
       <Row xs={1} md={1} className="m-auto">
         <Card.Text className={`${style.dark} `}>Exchange Rate By Currency</Card.Text>
       </Row>
-      <Cards rate={filterByCurrency} />
+      {!search && (loading ? <p>Loading...</p> : <Cards rate={currencies} />)}
+      {search && (Object.keys(filterByCurrency).length > 0
+        ? <Cards rate={filterByCurrency} /> : <p>No currency found</p>)}
     </>
   );
 }
-Search.propTypes = { currencies: PropTypes.objectOf(PropTypes.number).isRequired };
+Search.propTypes = {
+  currencies: PropTypes.objectOf(PropTypes.number).isRequired,
+  loading: PropTypes.bool.isRequired,
+};
 export default Search;
