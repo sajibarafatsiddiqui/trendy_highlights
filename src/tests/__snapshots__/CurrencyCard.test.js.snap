@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <Conversion /> component Should match the snapshot 1`] = `
+<div
+  className="EUR Card card"
+  style={
+    Object {
+      "backgroundColor": "#e94987",
+      "padding": "0",
+    }
+  }
+>
+  <div
+    className="card-body"
+    style={
+      Object {
+        "margin": "0",
+      }
+    }
+  >
+    <a
+      className=""
+      href="/details/USD-EUR"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "white",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+            "position": "absolute",
+            "right": "0",
+            "top": "0",
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M262.62 336L342 256l-79.38-80m68.35 80H170"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="32"
+        />
+        <path
+          d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z"
+          fill="none"
+          strokeMiterlimit="10"
+          strokeWidth="32"
+        />
+      </svg>
+      <div
+        className="card-title h5"
+      />
+      <p
+        className="card-text"
+      >
+        EUR
+      </p>
+      <div
+        className="card-footer"
+        style={
+          Object {
+            "bottom": "0",
+            "position": "absolute",
+            "right": "0",
+          }
+        }
+      >
+        100.0232
+      </div>
+    </a>
+  </div>
+</div>
+`;

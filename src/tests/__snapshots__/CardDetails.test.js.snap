@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <CardDetails /> component Should match the snapshot 1`] = `
+<div
+  className="details_currency row row-cols-md-1 row-cols-1"
+>
+  <div
+    className="d-flex justify-content-between flex-1 col"
+  >
+    <p
+      className="text-start m-3"
+    >
+      History Date
+    </p>
+    <p
+      className="text-end m-3"
+    >
+      2023-02-01
+    </p>
+  </div>
+  <div
+    className="d-flex justify-content-between col"
+  >
+    <p
+      className="text-start m-3 card-text"
+    >
+      History Rate
+    </p>
+    <p
+      className="text-end m-3"
+    >
+      100.23
+    </p>
+  </div>
+  <div
+    className="d-flex justify-content-between col"
+  >
+    <p
+      className="text-start m-3"
+    >
+      Current Date
+    </p>
+    <p
+      className="text-end m-3"
+    >
+      2023-03-17
+    </p>
+  </div>
+  <div
+    className="d-flex justify-content-between col"
+  >
+    <p
+      className="text-start m-3"
+    >
+      Latest Rate
+    </p>
+    <p
+      className="text-end m-3"
+    >
+      100.5
+    </p>
+  </div>
+  <div
+    className="d-flex justify-content-between col"
+  >
+    <p
+      className="text-start m-3"
+    >
+      Rate Changed
+    </p>
+    <p
+      className="text-end m-3"
+    >
+      0.2700
+    </p>
+  </div>
+  <div
+    className="col"
+  >
+    <p
+      className="text-center text-success"
+    >
+      Rate is increased by  
+      0.2700
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,8 @@
+
+body {
+  line-height: 2.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
+  background-color: #fd5294;
+  color: white;
+}
